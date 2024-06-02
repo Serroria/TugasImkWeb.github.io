@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffa62f;
+    color: #ACD793;
+
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.4);
+    display: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.background-clip{
+    position: absolute;
+    top: 0; /* Ubah dari bottom: 0 */
+    left: 0; /* Tambahkan ini untuk membuat video mulai dari tepi kiri */
+    width: 100%; /* Tambahkan ini untuk memastikan video meluas ke lebar penuh */
+    height: 100%; /* Tambahkan ini untuk memastikan video meluas ke tinggi penuh */
+    z-index: -1; /* Tetap di bawah elemen lain */
+    object-fit: cover; 
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: auto; /* Memindahkan ul ke kanan */
+    gap: 1rem; /* Mengurangi jarak antar item */
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 1rem;
+}
+
+nav ul li a{
+    color: #ACD793;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ffa62f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+  
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #FFC96F;
+}
+
+/*------------------about-------------------*/
+#about{
+    padding: 88px 0;
+    color: #ffffff;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#ffffff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ACD793;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*-------------------------service---------------------*/
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: #ACD793;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 20px;
+    transform: background 0.5s, transform 0.5s;
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background: #e1f274;
+    transform: translateY(-10px);
+}
+
+/*------portofolio----------*/
+#portofolio {
+    padding: 50px 0;
+}
+
+
+
+.work {
+   
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style-type: none; /* Menghilangkan bullet points pada list */
+    gap: 200px; /* Jarak antar item */
+    justify-content: left;
+}
+
+.work {
+    border-radius: 20px;
+    padding: 10px;
+    text-align: justify;
+    width: 200px;
+}
+
+.work img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#ffffff;
+}
+
+.tab-titles2 {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.tab-links.active-link {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tab-contents#Tradi ul {
+    flex-direction: row;
+}
+
+.tab-contents#Tradi li {
+    display: inline-block;
+    margin: 10px;
+}
+/*-------------Contact-----------------*/
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-left{
+    flex-basis: 10%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #fff;
+    margin-right: 10px;
+    font-size: 15px;
+}
+.social-icons{
+    margin-top: 30px;
+
+}
+.social-icons a{
+   text-decoration: none;
+   font-size: 30px;
+   margin-right: 15px;
+   color: #ffffff;
+   display: inline-block; 
+   transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    
+    display: inline-block;
+    border-radius: 8px;
+    background: #ACD793 ;
+    padding: 14px 40px;
+    transition: transform 0.5s;
+    text-decoration: none;
+    outline: 2px solid rgb(9, 9, 9); /* Outline dengan warna dan ketebalan yang sama dengan latar belakang tombol */
+    
+    
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    color: #1a1b19;
+    font-size: 16px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: line;
+}
+.btn.btn2:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+    
+}
+.sub-title{
+    font-size: 45px;
+}
+.contact-left p{
+    font-size: medium;
+}
+.contact-left .contact-item {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    font-size: medium;
+}
+
+.contact-left .contact-item i {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+/* Responsive CSS for Small Screens */
+nav .fa-regular{
+    display: none;
+}
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        padding: 10px 5%;
+    }
+
+    .header-text {
+        margin-top: 10%;
+        font-size: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    nav .fa-regular{
+        display: block;
+        font-size: 25px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #fff;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-regular.fa-circle-xmark{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+
+    }
+    nav ul .fa-solid.fa-bars{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+    .tab-contents#Tradi ul {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .work {
+        width: 100%;
+        padding: 0;
+    }
+
+    .tab-titles, .tab-titles2 {
+        justify-content: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meryleaf Portfolio Website</title>
+        <link rel="stylesheet" href="Css/Style.css">
+        <script src="https://kit.fontawesome.com/8bb52d7a71.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+<div class="container">
+    <video autoplay loop muted plays-inline class="background-clip">
+        <source src="img/video.mp4" type="video/mp4">
+    </video>
+    <nav>
+        <img src="img/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portofolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-regular fa-circle-xmark"  onclick="closemenu()"></i> 
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>Ilustrator</p>
+        <h1>Hi, I'm <span>Merylien Jovanda</span><br>from Indonesia</h1>
+    </div>
+</div>
+        </div>
+
+        <!---------------------about------------------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="img/User.png" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am a Informatics student at Singaperbangsa Karawang University with a passion for drawing and learning new things. 
+                            My interests span across various fields, including game development, graphic design, and web development. 
+                            I enjoy tackling challenges and am always eager to expand my knowledge and skills.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Illustrasi<br>Designing character<br>Poster design</span></li>
+                               
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2023</span><br>Juara 2 lomba poster Semantik</li>
+                               
+                            </ul> 
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021</span><br>SMAN 1 Jonggol</li>
+                            <li><span>2023-Now</span><br>Informatics Student, Faculty of Computer Science, Singaperbangsa Karawang University</li>
+                           
+                        </ul>
+                </div>
+                
+            </div>
+        </div>
+        <!---------------------Service------------------>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <h2>Desain Character</h2>
+                        <p>My Character Design service is perfect for those looking to create unique characters for various purposes, such as games, comics, animations, or personal projects. 
+                            I work closely with you to understand your vision and bring your characters to life with distinct personalities and detailed features. 
+                            Whether you need a heroic protagonist, a whimsical creature, or a futuristic android, I am dedicated to delivering exceptional and memorable designs.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-palette"></i>
+                        <h2>Draw your memory</h2>
+                        <p>Capture your cherished moments with my Draw Your Memory service. I transform your favorite memories into beautiful illustrations, whether it's a special event, a beloved place, or a significant milestone. 
+                            I pay meticulous attention to detail to ensure that every piece reflects the emotions and atmosphere of your memories, making them timeless keepsakes you can treasure forever.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-brush"></i>
+                        <h2>Draw element</h2>
+                        <p>Add a touch of artistry to your projects with my Draw Element service. I create intricate and compelling design elements that can enhance websites, presentations, marketing materials, and more. 
+                            From elegant icons and logos to detailed backgrounds and patterns, my designs are tailored to meet your specific needs and elevate the visual appeal of your work.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-------------------------Portfolio----------------------------->
+<div id="portofolio">
+    <div class="container">
+        <div class="raw">
+        <h1 class="sub-title"> My Work </h1>
+        
+            <div class="tab-titles2">
+                <p class="tab-links active-link" onclick="opentab('Digital')">Digital Art</p>
+                <p class="tab-links" onclick="opentab('Tradi')">Traditional Art</p>
+            </div>
+            <div class="tab-contents active-tab" id="Digital">
+                <ul>
+                    <li> 
+                        <div class="work">
+                        <img src="img/Artboard 1.jpg" alt="desain poster">
+                             <div class="layer">
+                                <h3>Desain Poster</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, voluptas labore quae quas vero voluptatem omnis. 
+                                Aspernatur, illum aperiam vitae, maiores ea pariatur quidem cupiditate voluptate asperiores aliquid ullam deserunt!</p>
+                                <a href =""></a>
+                            </div>
+                         </div>
+                    </li>
+                    <li>
+                        <div class="work">
+                            <img src="img/learn.png" alt="desain poster">
+                            <h3>Potrait art</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, voluptas labore quae quas vero voluptatem omnis. 
+                                Aspernatur, illum aperiam vitae, maiores ea pariatur quidem cupiditate voluptate asperiores aliquid ullam deserunt!</p>
+                            <a href =""></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="work">
+                            <img src="img/work5.jpg" alt="desain poster">
+                            <h3>Animal art</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, voluptas labore quae quas vero voluptatem omnis. 
+                                Aspernatur, illum aperiam vitae, maiores ea pariatur quidem cupiditate voluptate asperiores aliquid ullam deserunt!</p>
+                                <a href =""></a>
+                        </div>
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="tab-contents" id="Tradi">
+                <ul>
+                    <li>
+                        <div class="work">
+                            <img src="img/work2.jpg" alt="desain poster">
+                            <h3>Desain Karakter</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, voluptas labore quae quas vero voluptatem omnis. 
+                                Aspernatur, illum aperiam vitae, maiores ea pariatur quidem cupiditate voluptate asperiores aliquid ullam deserunt!</p>
+                                <a href =""></a>
+                        </div>
+                    </li>
+                      <li>  
+                        <div class="work">
+                            <img src="img/work3.jpg" alt="desain poster">
+                            <h3>Gambar Suasana</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, voluptas labore quae quas vero voluptatem omnis. 
+                                Aspernatur, illum aperiam vitae, maiores ea pariatur quidem cupiditate voluptate asperiores aliquid ullam deserunt!</p>
+                                <a href =""></a>
+                        </div>
+                     </li>
+                    <li>
+                        <div class="work">
+                            <img src="img/work4.jpg" alt="desain poster">
+                            <h3>Potrait art</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, voluptas labore quae quas vero voluptatem omnis. 
+                                Aspernatur, illum aperiam vitae, maiores ea pariatur quidem cupiditate voluptate asperiores aliquid ullam deserunt!</p>
+                                <a href =""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+           
+            
+         
+        
+        </div>
+    </div>
+</div>
+
+<!-------------------Contact--------------------------------------------->
+       <div id="contact">
+<div class="container">
+     <div class="contact-container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p  class="contact-item"><i class="fa-regular fa-paper-plane"></i>merylien.jovanda14@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+62 881-0244-32881</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/meryleaf/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-deviantart"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button class="btn btn2" type="submit">Submit</button>
+                </form>
+            </div>
+            
+        </div>
+     </div>
+</div>
+       </div>
+
+       <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            
+            function opentab(tabname){
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");   
+            document.getElementById(tabname).classList.add("active-tab");
+            
+        }
+        </script>
+
+        <script>
+            var sidemennu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemennu.style.right = "0";
+            }
+            function closemenu(){
+                sidemennu.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
